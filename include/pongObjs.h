@@ -58,8 +58,9 @@ private:
     float radius; 
 public : 
     Ball(){
-        this->setPos( &Vec2(0,0)); 
-        this->setVel( &Vec2(0,0)); 
+        Vec2 init = Vec2(0,0);
+        this->setPos( &init); 
+        this->setVel( &init); 
         radius = 1.0;  
     }
     float getRadius()           {return radius;}
@@ -74,8 +75,9 @@ private:
     float height;
 public: 
     Paddle(){
-        this->setPos( &Vec2(0,0)); 
-        this->setVel( &Vec2(0,0)); 
+        Vec2 init = Vec2(0,0);
+        this->setPos( &init); 
+        this->setVel( &init); 
         width  = 1.0; 
         height = 5.0;  
     }
