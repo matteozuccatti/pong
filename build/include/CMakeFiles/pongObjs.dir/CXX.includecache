@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/matteo/code/pong/include/pongObjs.h
+math.h
+-
+
+/home/matteo/code/pong/src/pongObjs.cpp
+iostream
+-
+../include/pongObjs.h
+/home/matteo/code/pong/include/pongObjs.h
+
