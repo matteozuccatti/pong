@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpongObjs.a  CMakeFiles/pongObjs.dir/__/src/pongObjs.cpp.o
-/usr/bin/ranlib libpongObjs.a
