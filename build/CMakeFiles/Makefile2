@@ -73,6 +73,7 @@ clean: include/clean
 # Directory level rules for directory include
 
 # Recursive "all" directory target.
+include/all: include/CMakeFiles/gameManager.dir/all
 include/all: include/CMakeFiles/pongObjs.dir/all
 
 .PHONY : include/all
@@ -83,6 +84,7 @@ include/preinstall:
 .PHONY : include/preinstall
 
 # Recursive "clean" directory target.
+include/clean: include/CMakeFiles/gameManager.dir/clean
 include/clean: include/CMakeFiles/pongObjs.dir/clean
 
 .PHONY : include/clean
@@ -94,7 +96,7 @@ include/clean: include/CMakeFiles/pongObjs.dir/clean
 CMakeFiles/pong.dir/all: include/CMakeFiles/pongObjs.dir/all
 	$(MAKE) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/depend
 	$(MAKE) -f CMakeFiles/pong.dir/build.make CMakeFiles/pong.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteo/code/pong/build/CMakeFiles --progress-num=1,2 "Built target pong"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteo/code/pong/build/CMakeFiles --progress-num=3,4 "Built target pong"
 .PHONY : CMakeFiles/pong.dir/all
 
 # Build rule for subdir invocation for target.
@@ -115,13 +117,40 @@ CMakeFiles/pong.dir/clean:
 .PHONY : CMakeFiles/pong.dir/clean
 
 #=============================================================================
+# Target rules for target include/CMakeFiles/gameManager.dir
+
+# All Build rule for target.
+include/CMakeFiles/gameManager.dir/all:
+	$(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/depend
+	$(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteo/code/pong/build/CMakeFiles --progress-num=1,2 "Built target gameManager"
+.PHONY : include/CMakeFiles/gameManager.dir/all
+
+# Build rule for subdir invocation for target.
+include/CMakeFiles/gameManager.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteo/code/pong/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/gameManager.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matteo/code/pong/build/CMakeFiles 0
+.PHONY : include/CMakeFiles/gameManager.dir/rule
+
+# Convenience name for target.
+gameManager: include/CMakeFiles/gameManager.dir/rule
+
+.PHONY : gameManager
+
+# clean rule for target.
+include/CMakeFiles/gameManager.dir/clean:
+	$(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/clean
+.PHONY : include/CMakeFiles/gameManager.dir/clean
+
+#=============================================================================
 # Target rules for target include/CMakeFiles/pongObjs.dir
 
 # All Build rule for target.
 include/CMakeFiles/pongObjs.dir/all:
 	$(MAKE) -f include/CMakeFiles/pongObjs.dir/build.make include/CMakeFiles/pongObjs.dir/depend
 	$(MAKE) -f include/CMakeFiles/pongObjs.dir/build.make include/CMakeFiles/pongObjs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteo/code/pong/build/CMakeFiles --progress-num=3,4 "Built target pongObjs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matteo/code/pong/build/CMakeFiles --progress-num=5,6 "Built target pongObjs"
 .PHONY : include/CMakeFiles/pongObjs.dir/all
 
 # Build rule for subdir invocation for target.

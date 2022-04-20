@@ -62,6 +62,13 @@ void MovingObj::move()
     this->setPos(&newPos);
 }
 
+void MovingObj::reset()
+{
+    Vec2 res = Vec2(0,0);
+    this->setPos(&res); 
+    this->setVel(&res);
+}
+
 void MovingObj::printStatus()
 {
     std::cout << "pos ["; 
@@ -87,4 +94,14 @@ void Paddle::print()
 {
      std::cout<< "Paddle | ";
     this->printStatus(); 
+}
+void Paddle::moveUp()
+{
+    Vec2 newP = Vec2(0,1) + this->getPos();
+    this->setPos(&newP);
+}
+void Paddle::moveDown()
+{
+    Vec2 newP = Vec2(0,-1) + this->getPos();
+    this->setPos(&newP);
 }

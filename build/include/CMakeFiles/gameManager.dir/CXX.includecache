@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/matteo/code/pong/include/gameManager.h
+pongObjs.h
+/home/matteo/code/pong/include/pongObjs.h
+
+/home/matteo/code/pong/include/pongObjs.h
+math.h
+-
+
+/home/matteo/code/pong/src/gameManager.cpp
+time.h
+-
+../include/gameManager.h
+/home/matteo/code/pong/include/gameManager.h
+../include/pongObjs.h
+/home/matteo/code/pong/include/pongObjs.h
+

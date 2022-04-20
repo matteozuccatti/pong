@@ -50,6 +50,7 @@ public:
     void changeDirection(Vec2 &v);
     void move();  
     void printStatus(); 
+    void reset(); 
 };
 
 class Ball : public MovingObj
@@ -62,6 +63,13 @@ public :
         this->setPos( &init); 
         this->setVel( &init); 
         radius = 1.0;  
+    }
+    Ball(double _x, double _y){
+        Vec2 initP = Vec2(_x,_y);
+        Vec2 initV = Vec2(0,0);
+        this->setPos( &initP); 
+        this->setVel( &initV);
+        radius = 1.0;
     }
     float getRadius()           {return radius;}
     void setRadius(float &r)    {this->radius = r;}        
@@ -81,11 +89,22 @@ public:
         width  = 1.0; 
         height = 5.0;  
     }
+     Paddle(double _x, double _y){
+        Vec2 initP = Vec2(_x,_y);
+        Vec2 initV = Vec2(0,0);
+        this->setPos( &initP); 
+        this->setVel( &initV); 
+        width  = 1.0; 
+        height = 5.0;  
+    }
     float getHeight()           {return height;}
     float getWidth()            {return width;}
     void setHeight(float &h)    {this->height = h;}
     void setWidth(float &w)     {this->width = w;}
     void print(); 
+
+    void moveUp();
+    void moveDown();
 };
 
 

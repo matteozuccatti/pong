@@ -124,6 +124,19 @@ pong/fast:
 .PHONY : pong/fast
 
 #=============================================================================
+# Target rules for targets named gameManager
+
+# Build rule for target.
+gameManager: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gameManager
+.PHONY : gameManager
+
+# fast build rule for target.
+gameManager/fast:
+	$(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/build
+.PHONY : gameManager/fast
+
+#=============================================================================
 # Target rules for targets named pongObjs
 
 # Build rule for target.
@@ -172,6 +185,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... pong"
+	@echo "... gameManager"
 	@echo "... pongObjs"
 	@echo "... main.o"
 	@echo "... main.i"

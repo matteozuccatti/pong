@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+include/CMakeFiles/gameManager.dir/rule:
+	cd /home/matteo/code/pong/build && $(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/gameManager.dir/rule
+.PHONY : include/CMakeFiles/gameManager.dir/rule
+
+# Convenience name for target.
+gameManager: include/CMakeFiles/gameManager.dir/rule
+
+.PHONY : gameManager
+
+# fast build rule for target.
+gameManager/fast:
+	cd /home/matteo/code/pong/build && $(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/build
+.PHONY : gameManager/fast
+
+# Convenience name for target.
 include/CMakeFiles/pongObjs.dir/rule:
 	cd /home/matteo/code/pong/build && $(MAKE) -f CMakeFiles/Makefile2 include/CMakeFiles/pongObjs.dir/rule
 .PHONY : include/CMakeFiles/pongObjs.dir/rule
@@ -124,6 +139,33 @@ pongObjs: include/CMakeFiles/pongObjs.dir/rule
 pongObjs/fast:
 	cd /home/matteo/code/pong/build && $(MAKE) -f include/CMakeFiles/pongObjs.dir/build.make include/CMakeFiles/pongObjs.dir/build
 .PHONY : pongObjs/fast
+
+__/src/gameManager.o: __/src/gameManager.cpp.o
+
+.PHONY : __/src/gameManager.o
+
+# target to build an object file
+__/src/gameManager.cpp.o:
+	cd /home/matteo/code/pong/build && $(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/__/src/gameManager.cpp.o
+.PHONY : __/src/gameManager.cpp.o
+
+__/src/gameManager.i: __/src/gameManager.cpp.i
+
+.PHONY : __/src/gameManager.i
+
+# target to preprocess a source file
+__/src/gameManager.cpp.i:
+	cd /home/matteo/code/pong/build && $(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/__/src/gameManager.cpp.i
+.PHONY : __/src/gameManager.cpp.i
+
+__/src/gameManager.s: __/src/gameManager.cpp.s
+
+.PHONY : __/src/gameManager.s
+
+# target to generate assembly for a file
+__/src/gameManager.cpp.s:
+	cd /home/matteo/code/pong/build && $(MAKE) -f include/CMakeFiles/gameManager.dir/build.make include/CMakeFiles/gameManager.dir/__/src/gameManager.cpp.s
+.PHONY : __/src/gameManager.cpp.s
 
 __/src/pongObjs.o: __/src/pongObjs.cpp.o
 
@@ -160,7 +202,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... gameManager"
 	@echo "... pongObjs"
+	@echo "... __/src/gameManager.o"
+	@echo "... __/src/gameManager.i"
+	@echo "... __/src/gameManager.s"
 	@echo "... __/src/pongObjs.o"
 	@echo "... __/src/pongObjs.i"
 	@echo "... __/src/pongObjs.s"

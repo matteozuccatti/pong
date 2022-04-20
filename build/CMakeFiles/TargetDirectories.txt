@@ -3,4 +3,5 @@
 /home/matteo/code/pong/build/CMakeFiles/pong.dir
 /home/matteo/code/pong/build/include/CMakeFiles/rebuild_cache.dir
 /home/matteo/code/pong/build/include/CMakeFiles/edit_cache.dir
+/home/matteo/code/pong/build/include/CMakeFiles/gameManager.dir
 /home/matteo/code/pong/build/include/CMakeFiles/pongObjs.dir
